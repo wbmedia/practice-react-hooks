@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import MyComponent from './reactEffects'
 import ApiExample from './ApiExemple'
+import MyComponentWithContext from './reactContext'
+import ReactUseRefEx from './reactUseRefEx'
 
-import logo from './logo.svg';
 import './App.css';
 
 function MemberSection() {
@@ -51,8 +52,10 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header">
+      <header className="App-header">
+        <MyComponentWithContext />
         <ApiExample />
+        <ReactUseRefEx />
         <p>Simple Hooks App</p>
         {<Objectos />}
 				{isActive && <MemberSection />}
